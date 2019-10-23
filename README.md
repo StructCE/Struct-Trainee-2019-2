@@ -1,4 +1,4 @@
-# Struct Trainee 2019 2
+# Struct Trainee 2019/2
 
 Sejam bem vindos, pilotos! :rocket:
 
