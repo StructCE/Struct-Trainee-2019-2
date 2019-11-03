@@ -16,11 +16,11 @@ array2 = []
 hash = {}
 
 puts "Digite o array1: "
-for i in 1..rand(1..2)
+for i in 1..3
 array1 << gets.chomp
 end
 puts "Digite o array2: "
-for i in 1..rand(1..2)
+for i in 1..3
 array2 << gets.chomp
 end
 
