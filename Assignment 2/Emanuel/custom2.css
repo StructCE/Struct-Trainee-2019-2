@@ -1,0 +1,23 @@
+body{
+	background-image: url("https://www.audi.com.br/content/dam/nemo/br/models/Q5/25-10-2018/galeria/6_1920x1080.png?downsize=1920px:*");
+	background-position: center center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+h4{
+	padding-top: 50px;
+}
+
+.vermelho{
+	color: #B22222;
+}
+
+.cinza{
+	color: #EAE9E9;
+}
+
+.paddinggrid{
+	padding-top: 400px;
+}
