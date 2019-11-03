@@ -1,0 +1,60 @@
+@font-face { font-family: sony_font; src: url('sony.ttf'); }
+@font-face { font-family: ps_font; src: url('psfont.ttf'); }
+
+.navbar-default .navbar-brand {
+  color: #ffffff !important;
+}
+
+body
+{
+  background-attachment: local;
+  background: url('PSone.jpg') no-repeat;
+  background-size: cover;
+  background-color: #000000;
+}
+
+.centralized
+{
+  text-align: center;
+  padding-top: 6%;
+}
+
+.lower_end
+{
+  padding-top: 19.56%;
+}
+
+.crimson
+{
+  color: #e50300;
+}
+
+.gold
+{
+  color: #dbcb2e;
+}
+
+.aqua
+{
+  color: #008fa0;
+}
+
+.blue
+{
+  color: #232783;
+}
+
+.sony_font
+{
+  font-family: sony_font;
+}
+
+.ps_font
+{
+  font-family: ps_font;
+}
+
+.black_bg
+{
+  background-color: #a7a7a7;
+}
