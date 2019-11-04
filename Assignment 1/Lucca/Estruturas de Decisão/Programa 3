@@ -1,0 +1,28 @@
+
+ano = 0
+controle = "1"
+
+def bis?(ano)
+  if ano % 400 == 0 or (ano % 100 != 0 and ano % 4 == 0)
+    return true
+  else
+    return false
+  end
+end
+
+while controle != "0"
+  puts "\n Digite um ano."
+  ano = gets.to_i
+
+  if bis?(ano)
+    puts "\n Esse ano é bissexto."
+
+  else
+    puts "\n Esse ano não é bissexto."
+    puts "\n Digite 0 para sair, qualquer outra tecla para continuar." 
+    controle = gets.chomp  
+
+  end 
+end
+
+puts "\n \n End of Program"

@@ -1,0 +1,31 @@
+
+controle = "1"
+error = true
+
+hash = {}
+keys = ["a", "b", "c", "d", "e", "podaspdsapoda"]
+values = [1, 5, 87, 3, 1] 
+
+if keys.size > values.size
+  smaller_size = values.size
+elsif keys.size < values.size
+  smaller_size = keys.size
+else 
+  smaller_size = values.size
+  error = false
+end
+
+for c in 0..(smaller_size - 1)
+  hash[keys[c]] = values[c]
+end
+
+if error == true
+  puts "ERROR! \nARRAYS OF DIFFERENT SIZE! \nVALUE ASSIGNMENT ABORTED!"
+  puts "The (aborted) result is the following:"
+end
+
+puts "The result is the following:"
+puts hash
+
+
+puts "\n \n End of Program"

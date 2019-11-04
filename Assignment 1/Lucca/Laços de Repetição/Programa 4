@@ -1,0 +1,37 @@
+
+hash = {}
+keys = ["a", "b", "c", "d", "e", "kg", "g", 8, "adsdsdsas"]
+values = [1, 2, 3, 4, 5, "fl", 7] 
+
+if keys.size > values.size
+  smaller_size = values.size
+  dif = keys.size - values.size
+  path1 = true
+elsif keys.size < values.size
+  smaller_size = keys.size
+  dif = values.size - keys.size
+  path2 = true
+else 
+  smaller_size = values.size
+end
+
+for c in 0..(smaller_size - 1)
+  hash[keys[c]] = values[c]
+end
+
+puts keys.size - smaller_size
+
+if path1 == true
+  for c in 0..(dif - 1)
+    hash[keys[c+smaller_size]] = {}
+  end
+
+elsif path2 == true
+  hash[values[keys.size]] = values[keys.size..values.size]
+
+end
+puts "The result is the following:"
+puts hash
+
+
+puts "\n \n End of Program"

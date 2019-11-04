@@ -1,0 +1,28 @@
+
+controle = "1"
+
+col_s = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j"]
+col_n = [1, 2, 3, 4, 5, 6, 7, 8, 10]
+
+res_s = []
+res_n = []
+
+while controle != "0"
+  puts "\n Escolha um N"
+  N = gets.to_i
+#assert N entre 0 e 10
+
+  for i in 0..N - 1 
+    res_s[i] = col_s.sample
+    res_n[i] = col_n.sample
+  end
+
+  puts "\n #{res_s.join(", ")}"
+  puts "\n #{res_n.join(", ")}"
+  
+  puts "\n Digite 0 para sair, qualquer outra tecla para tentar de novo" 
+  controle = gets.chomp  
+
+end
+
+puts "\n \n End of Program"

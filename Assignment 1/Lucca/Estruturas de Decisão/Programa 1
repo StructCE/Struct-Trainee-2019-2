@@ -1,0 +1,28 @@
+
+controle = "1"
+
+def is_ascii?(string)
+  if string.ascii_only?  
+    return true
+  else  
+    return false
+  end   
+end 
+
+while controle != "0"
+
+  puts "\n\n Digite algo a seguir, te direi se é ascii ou não."
+  string = gets.chomp
+
+  if is_ascii?(string)
+    puts "\n A string contém somente caracteres ascii."
+  else
+    puts "\n A string contém pelo menos algum caracter que não é ascii."
+  end
+
+  puts "\n Digite 0 para sair, qualquer outra tecla para continuar." 
+  controle = gets.chomp   
+
+end  
+
+puts "\n \n End of Program"

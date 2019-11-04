@@ -1,0 +1,21 @@
+
+controle = "1"
+
+entrada   = ["torrada com pasta de alho", "cebola empanada", "bruschetta"]
+principal = ["pato com arroz negro", "pizza de Peperonni", "lasanha de brócolis ao molho branco"]
+sobremesa = ["sorvete de gianduia", "profiterólis", "brownie de nozes com doce de leite"]
+
+cardápio = [entrada, principal, sobremesa]
+
+while controle != "0"
+  puts "\n Digite enter para escolher um prato aleatório."
+  gets
+
+  puts "\nSua refeição hoje será entrada de #{cardápio[0].sample}, #{cardápio[1].sample} como prato principal e sobremesa de #{cardápio[2].sample}"
+  
+  puts "\n Digite 0 para sair, qualquer outra tecla para tentar outra refeição." 
+  controle = gets.chomp  
+
+end
+
+puts "\n \n End of Program"

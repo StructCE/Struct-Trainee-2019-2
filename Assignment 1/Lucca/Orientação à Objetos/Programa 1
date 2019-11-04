@@ -1,0 +1,73 @@
+
+grades = {}
+grades_2 = {}
+courses = []
+grades_array = []
+
+
+def classify(nota)
+  if nota < 0 or nota > 10
+    puts "Digite uma nota de 0 a 10!"
+  elsif nota == 0
+    return "SR"
+  elsif nota < 3
+    return "II"
+  elsif nota < 5
+    return "MI"
+  elsif nota < 7
+    return "MM"
+  elsif nota < 9
+    return "MS"
+  elsif nota <= 10
+    return "SS"
+  else 
+    puts "Digite uma nota válida!"
+  end
+end
+
+class Aluno
+
+  def initialize(courses, grades, grades_2)
+    @courses = courses
+    @grades = grades
+    @grades_2 = grades_2
+  end
+
+  def set_course(course, grade)
+    @grades[course] = grade
+    @courses.push(course)
+
+  end
+
+  def get_courses()
+    puts @courses.join(", ")
+  end
+
+  def get_grade(course)
+    puts @grades[course]
+  end
+
+  def get_result()
+    puts @grades_2
+  end
+    
+
+end
+
+courses = ["BD", "HST", "C3", "OAC", "IAL"]
+grades_array = [1.0, 3.0, 5.0, 7.0, 9.0]
+
+for i in 0..4
+  grades[courses[i]] = grades_array[i]
+end
+
+for i in 0..4
+  grades_2[courses[i]] = classify(grades_array[i])
+end
+
+aluno1 = Aluno.new(courses, grades, grades_2)
+
+aluno1.set_course("APC", 10)
+aluno1.get_courses()
+aluno1.get_grade("C3")
+aluno1.get_result()
