@@ -24,26 +24,6 @@ body
   padding-top: 19.56%;
 }
 
-.crimson
-{
-  color: #e50300;
-}
-
-.gold
-{
-  color: #dbcb2e;
-}
-
-.aqua
-{
-  color: #008fa0;
-}
-
-.blue
-{
-  color: #232783;
-}
-
 .sony_font
 {
   font-family: sony_font;
@@ -54,7 +34,13 @@ body
   font-family: ps_font;
 }
 
-.black_bg
+.black
 {
-  background-color: #a7a7a7;
+  color: black;
+}
+
+.wtbsh
+{
+  color: white;
+  text-shadow: 2px 2px 3px black;
 }
