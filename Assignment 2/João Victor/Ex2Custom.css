@@ -1,0 +1,42 @@
+body {
+     background-image: url("Drone4.jpg");
+     background-color: #cccccc;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     background-position: center;
+     background-size: cover;
+}
+
+.barra {
+     font-size: 92%;
+}
+
+.titulo {
+     padding-top: 10px;
+}
+
+.comprar {
+     padding-top: 220px;
+}
+
+.caracteristicas {
+     padding-top: 40px;
+     font-size: 95%;
+}
+
+.preto {
+     color: black;
+}
+
+.branco {
+     color: white;
+}
+
+@font-face {
+     font-family: Comfortaa;
+     src: url(Comfortaa-Bold.ttf);
+}
+
+.fonte {
+     font-family: Comfortaa;
+}
