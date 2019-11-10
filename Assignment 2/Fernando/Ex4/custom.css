@@ -1,0 +1,62 @@
+body
+{
+	background-attachment: local;
+	background: url('img/acai.jpeg') no-repeat;
+	background-size: cover;
+	background-color: #000000;
+}
+
+p
+{
+	color: black;
+}
+
+.color-white
+{
+	color: white;
+}
+
+.color-darkgray
+{
+	color: darkgray;
+}
+
+.color-whitesmoke
+{
+	color: whitesmoke;
+}
+
+.text-align-center
+{
+	text-align: center;
+}
+
+.text-align-left
+{
+	text-align: left;
+}
+
+.text-align-right
+{
+	text-align: right;
+}
+
+.padding-top-250
+{
+	padding-top: 250px;
+}
+
+.padding-top-7
+{
+	padding-top: 7px;
+}
+
+.padding-top-10
+{
+	padding-top: 10px;
+}
+
+.padding-top-20
+{
+	padding-top: 20px;
+}
