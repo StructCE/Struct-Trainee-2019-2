@@ -1,0 +1,75 @@
+
+
+body {
+    background-image: url('computer4.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: cover;    
+}
+
+ul {
+  list-style-type: none;
+  margin: 1;
+  padding: 0;
+  width: 200px;
+  background-color: transparent;
+}
+
+li navbar {
+  display: block;
+  color: rgb(253, 252, 252);
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color on hover */
+li navbar:hover {
+  background-color: transparent;
+  color: rgb(27, 177, 223);
+}
+
+li navbar {
+  font-size: large;
+  line-height: 5.0;
+  font-family: "Arial";
+}
+
+img{
+    position: center;
+    right: 30px;
+    top: 60px;
+    left: 0px;
+}
+
+h1 {
+  position: absolute;
+  top: 30%;
+  left: 54%;
+  transform: translate(-50%, -50%);
+  color: rgb(59, 112, 224);
+  font-size: 60px;
+  font-family: "Arial";
+}
+
+p{
+    position: absolute;
+    top: 42%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 20px;
+    font-family: "Arial";
+    text-align: center;
+}
+
+h2{
+    position: absolute;
+  top: 50%;
+  left: 54%;
+  transform: translate(-50%, -50%);
+  color: rgb(85, 129, 224);
+  font-size: 25px;
+  font-family: "Arial";
+  text-align: center;
+}
+
