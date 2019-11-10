@@ -1,0 +1,65 @@
+body {
+    background-image: url("/home/hcarrer/Henrique/newyork.jpg");
+    background-size: 1920px 1080px;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    font-size: 50px;
+    font-style: italic;
+    font-family: "Times New Roman", Times, serif;
+    position: absolute;
+    left: 0;
+    top: 40%;
+    text-align: center;
+    width: 100%;
+    color: black;
+    opacity: 80%;
+}
+
+h2 {
+    font-family: "Times New Roman", Times, serif;
+    position: absolute;
+    left: 0;
+    top: 46%;
+    width: 100%;
+    text-align: center;
+    color: black;
+    opacity: 80%;
+}
+
+nav .navbar-nav li a:hover {
+    size: 100px;
+    color: black !important;
+}
+
+ul {
+    position: relative;
+    right: 100px;
+}
+
+li {
+    font-size: 30px;
+    padding: 20px;
+}
+
+
+.position {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+}
+
+.slide-size {
+    height: 400px;
+    width: 600px;
+}
+
+.divider {
+    position: relative;
+    top: 32px;
+    height: 40px;
+    width: 2px;
+    background-color: white;
+}
