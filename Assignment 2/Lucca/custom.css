@@ -1,0 +1,35 @@
+body {
+    background-image: url(https://wallpaperplay.com/walls/full/a/1/6/197769.jpg);
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size:  100% auto;
+    overflow: hidden;
+}
+
+nav a{
+    color: white !important;
+    padding-left: 0 !important;
+    margin-right: 150px;
+    font-size: 150% ;
+    font-family: "Roboto Light", sans-serif;
+}
+
+.myclass{
+    color: white !important;
+    font-size: 150% ;
+    font-family: "Roboto Light", sans-serif;
+    margin-top: 250px;
+
+}
+.mytext{
+    margin-left: 50px;
+}
+.mytitle{
+    color: white !important;
+    font-size: 200% ;
+    font-family: "Roboto Light", sans-serif;
+    margin-top: 190px;
+    margin-right: 35px;
+}
+.navbar-brand {
+    margin-left: 30px;
+}
