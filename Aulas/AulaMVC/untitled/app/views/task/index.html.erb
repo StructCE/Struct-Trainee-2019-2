@@ -1,0 +1,11 @@
+<ul>
+  <% @tasks.each do |task| %>
+    <li>
+      <%= task.title %>
+      <%= link_to('Edit', edit_task_path(task), class:"btn btn-primary") %>
+      <%= link_to('Show', task_path(task), class:"btn btn-secondary") %>
+      <%= link_to('Destroy', task_path(task), class:"btn btn-dark", method: :delete) %>
+
+    </li>
+  <% end %>
+</ul>
