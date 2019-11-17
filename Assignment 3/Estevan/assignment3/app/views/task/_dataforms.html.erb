@@ -1,0 +1,26 @@
+<div class="centralized">
+  <div class="container">
+    <%= form_with(model: task, local: true) do |form| %>
+
+      <div class="form-group">
+        <h3>Title<span class="red">*</span></h3>
+        <%= form.text_field :title, class: "form-control" %>
+      </div>
+
+      <div>
+        <h3>Description</h3>
+        <%= form.text_area :description, class: "form-control" %>
+      </div>
+
+      <div>
+        <h3>Achievement date</h3>
+        <%= form.datetime_field :achievement_date, class: "form-control centralized" %>
+      </div>
+
+      <div class="moderate_padding_top">
+        <%= form.submit "Submit", :class => 'btn btn-primary' %>
+        <span style="padding-left: 50px"><%= link_to('Cancel', tasks_path, class: "btn btn-danger") %>        </span>
+      </div>
+    <% end %>
+  </div>
+</div>

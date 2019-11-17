@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Assignment 3</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <%= link_to('Home (Index)', tasks_path, class: "navbar-brand") %>
+  <span class="collapse navbar-collapse">
+    <%= link_to('Create a task', new_task_path, class: "nav-item nav-link active white") %>
+  </span>
+</nav>
+
+<div class="gray_bg">
+  <h1 class="centralized moderate_padding_top"> <%= @page_title %></h1>
+  <h1 class="moderate_padding_top"></h1>
+</div>
+
+<% if flash[:creat_success] %>
+  <div class="small_padding_top flashm" style="width: 300px">
+    <div class="alert alert-success">
+      <%= flash[:creat_success] %>
+    </div>
+  </div>
+<% end %>
+
+<% if flash[:creat_failed] %>
+  <div class="small_padding_top flashm" style="width: 300px">
+    <div class="alert alert-warning">
+      <%= flash[:creat_failed] %>
+    </div>
+  </div>
+<% end %>
+
+<% if flash[:deleted] %>
+  <div class="small_padding_top flashm" style="width: 300px">
+    <div class="alert alert-danger">
+      <%= flash[:deleted] %>
+    </div>
+  </div>
+<% end %>
+
+<% if flash[:updated] %>
+  <div class="small_padding_top flashm" style="width: 300px">
+    <div class="alert alert-success">
+      <%= flash[:updated] %>
+    </div>
+  </div>
+<% end %>
+
+<% if flash[:update_failed] %>
+  <div class="small_padding_top flashm" style="width: 300px">
+    <div class="alert alert-warning">
+      <%= flash[:update_failed] %>
+    </div>
+  </div>
+<% end %>
+
+<%= yield %>
+
+</body>
+</html>
