@@ -17,9 +17,9 @@
 table {
     position: relative;
     table-layout: fixed;
-    width: 33%;
+    width: 50%;
     top: 20px;
-    left: 33%;
+    left: 25%;
 }
 
 td{
