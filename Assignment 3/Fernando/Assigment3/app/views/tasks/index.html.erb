@@ -1,0 +1,19 @@
+<h1 class="text-align-center padding-bottom-20">Current Tasks:</h1>
+
+<ul class="list-group">
+  <% @tasks.each do |task| %>
+    <li class="list-group-item">
+      <div class="row">
+        <div class="col">
+          <%= task.title %>
+        </div>
+        <div class="col"></div>
+        <div class="col">
+          <%= link_to('Edit', edit_task_path(task), class:"btn btn-success") %>
+          <%= link_to('Show', task_path(task), class:"btn btn-info") %>
+          <%= link_to('Destroy', task_path(task), class:"btn btn-danger", method: :delete) %>
+        </div>
+      </div>
+    </li>
+  <% end %>
+</ul>

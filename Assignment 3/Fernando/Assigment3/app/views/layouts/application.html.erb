@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Assignment 3</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="">
+        <%= image_tag("check.png", size: "25x25") %> TASK MANAGER
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li>
+            <a class="nav-link" href="http://localhost:3000/tasks/">Current Tasks<span class="sr-only">(current)</span></a>
+          </li>
+          <li>
+            <a class="nav-link" href="http://localhost:3000/tasks/new">Create New Task<span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="padding-bottom-10"></div>
+
+    <% if flash[:created] %>
+      <div class="small_padding_top flashm text-center">
+        <div class="alert alert-success" role="alert">
+          <%= flash[:created] %>
+        </div>
+      </div>
+    <% end %>
+
+    <% if flash[:not_created] %>
+      <div class="small_padding_top flashm text-center">
+        <div class="alert alert-warning" role="alert">
+          <%= flash[:not_created] %>
+        </div>
+      </div>
+    <% end %>
+
+    <% if flash[:updated] %>
+      <div class="small_padding_top flashm text-center">
+        <div class="alert alert-success" role="alert">
+          <%= flash[:updated] %>
+        </div>
+      </div>
+    <% end %>
+
+    <% if flash[:not_updated] %>
+      <div class="small_padding_top flashm text-center">
+        <div class="alert alert-warning" role="alert">
+          <%= flash[:not_updated] %>
+        </div>
+      </div>
+    <% end %>
+
+    <% if flash[:deleted] %>
+      <div class="small_padding_top flashm text-center">
+        <div class="alert alert-danger" role="alert">
+          <%= flash[:deleted] %>
+        </div>
+      </div>
+    <% end %>
+
+    <%= yield %>
+
+  </body>
+</html>
