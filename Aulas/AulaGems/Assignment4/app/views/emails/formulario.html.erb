@@ -1,0 +1,15 @@
+<div class="text-center">
+  <h1> Envio de e-mail </h1>
+  <%= form_with(url: post_path, method: "post") do %>
+    <%= label_tag(:email, "Destinatário:") %>
+    <%= text_field_tag(:email) %>
+    <br>
+    <%= label_tag(:assunto, "Assunto:") %>
+    <%= text_field_tag(:assunto) %>
+    <br>
+    <%= label_tag(:conteudo, "Conteúdo:") %>
+    <%= text_field_tag(:conteudo) %>
+    <%= submit_tag%>
+
+  <% end %>
+</div>
