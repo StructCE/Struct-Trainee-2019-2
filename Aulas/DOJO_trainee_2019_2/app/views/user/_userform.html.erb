@@ -1,0 +1,25 @@
+<%= form_with model: @user, local: true do |form| %>
+  <div>
+    <%= form.label :name, "Name" %>
+    <%= form.text_field :name, class: "form-control" %>
+  </div>
+  <div>
+    <%= form.label :name, "CPF" %>
+    <%= form.text_field :cpf, class: "form-control" %>
+  </div>
+  <div>
+    <%= form.label :name, "Birth Date" %>
+    <%= form.date_field :dn, class: "form-control" %>
+  </div>
+  <div>
+    <%= form.label :name, "Email" %>
+    <%= form.text_field :email, class: "form-control" %>
+  </div>
+  <div>
+    <%= form.label :name, "Matricula" %>
+    <%= form.text_field :matricula, class: "form-control" %>
+  </div>
+  <div>
+    <%= form.submit "SUBMIT" %>
+  </div>
+<% end %>
