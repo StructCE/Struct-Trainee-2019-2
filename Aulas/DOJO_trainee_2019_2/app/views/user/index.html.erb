@@ -1,14 +1,24 @@
 <% @users.each do |user| %>
-
-  <h1>Nome: </h1>
-  <p><%= user.name %></p>
-  <h1>CPF: </h1>
-  <p><%= user.cpf%></p>
-  <h1>Data de Nascimento:  </h1>
-  <p><%= user.dn %></p>
-  <h1>Email: </h1>
-  <p><%= user.email %></p>
-  <h1>Matricula: </h1>
-  <p><%= user.matricula %></p>
+  <div>
+    <p class="titulao">Nome: </p>
+    <p class="default"><%= user.name %></p>
+  </div>
+  <div>
+    <p class="titulao">CPF: </p>
+    <p class="default"><%= user.cpf%></p>
+  </div>
+  <div>
+    <p class="titulao">Data de Nascimento:  </p>
+    <p class="default"><%= user.dn %></p>
+  </div>
+  <div>
+    <p class="titulao">Email: </p>
+    <p class="default"><%= user.email %></p>
+  </div>
+  <div>
+    <p class="titulao">Matricula: </p>
+    <p class="default"><%= user.matricula %></p>
+  </div>
+  <%= link_to "Editar", edit_user_path(user), class:'btn btn-success'%>
 
 <%end%>
